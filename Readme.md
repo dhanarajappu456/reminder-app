@@ -6,6 +6,10 @@ This API provides endpoints to manage reminders for users. Reminders consist of 
 
 The base URL for accessing the API endpoints is `http://localhost:7000`.
 
+#### Live Deployment
+
+This API is live and accessible at [Reminder App](https://reminder-app-pcrz.onrender.com) 🚀.
+
 #### Authentication
 
 Authentication is not required for accessing the provided endpoints.
@@ -64,7 +68,7 @@ Content-Type: application/json
 ##### Get Reminders for a User
 
 ```http
-GET /api/reminder/user123
+GET /api/reminder/user123 HTTP/1.1
 ```
 
 #### Dependencies
@@ -82,10 +86,20 @@ The API utilizes MongoDB as its database. Ensure the MongoDB connection string i
 
 To start the server, run the following command:
 
+Navigate to the backend folder
+
 ```
-node index.js
+node index
 ```
 
 #### Author
 
 This API is developed and maintained by Dhanaraj S
+
+#### Version
+
+Current version: 1.0.0
+
+#### License
+
+This project is licensed under the [License Name] License.
