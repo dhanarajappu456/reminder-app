@@ -14,6 +14,11 @@ mongoose
   .connect(String(process.env.MONGO_CONNECTION_STRING))
   .then(() => console.log("connected to DB"));
 
+//Welcoming Api
+app.get("/", (req, res) => {
+  res.send("Welcome to Reminder app");
+});
+
 //api endpoint to test
 app.get("/test", (req, res) => {
   res.status(200).send({ message: "ok" });
